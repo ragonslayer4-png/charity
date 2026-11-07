@@ -35,7 +35,20 @@ nav a:hover{
     color: #12355b;
     white-space: nowrap;
     overflow: hidden;
-    animation: movename 7s linear infinite;
+    position: relative;
+    width: fit-content;
+    animation: bounce 5s linear infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(500px);
+    }
+}
 }
 @keyframes movename{
     from{
